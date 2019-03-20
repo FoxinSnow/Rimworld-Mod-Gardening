@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+		<!--Def a small love fountain-->
+		<ThingDef Class=="Gardening.ThingDef_GardenLamp" ParentName="FurnitureBase">
+			<defName>GardenLamp</defName>
+			<label>garden lamp</label>
+			<description>A lovely outdoor light source.</description>
+			<graphicData>
+				<texPath>Garden_Lamp_tex</texPath>
+				<graphicClass>Graphic_Single</graphicClass>
+				<drawSize>(1,3)</drawSize>
+			</graphicData>
+			<statBases>
+				<MaxHitPoints>300</MaxHitPoints>
+				<Flammability>0</Flammability>
+				<Beauty>3</Beauty>
+				<WorkToBuild>500</WorkToBuild>
+				<Mass>10</Mass> <!--weight-->
+			</statBases>
+			<socialPropernessMatters>false</socialPropernessMatters>
+			<size>(1,3)</size>
+			<costList>
+				<Steel>2</Steel>
+			</costList>
+			<stuffCategories>
+				<li>Woody</li>
+				<li>Stony</li>
+			</stuffCategories>
+			<costStuffCount>50</costStuffCount>
+			<constructionSkillPrerequisite>1</constructionSkillPrerequisite>
+			<techLevel>Medieval</techLevel>
+			<!--for c# use-->
+			<AddHediffChance>0.05</AddHediffChance>
+			<HediffToAdd>Gardening</HediffToAdd>
+			<thingClass>Gardening.Projectile_GardenLamp</thingClass>
+		</ThingDef>
+</Defs>
