@@ -6,11 +6,17 @@
 				<defName>Small_Fountain</defName>
 				<label>small fountain</label>
 				<description>A simple and small fountain to bring you happiness.</description>
+        
 				<graphicData>
 					<texPath>Small_Fountain_tex</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
 					<drawSize>(3,3)</drawSize>
+          <shadowData>
+            <volume>(0.3, 0.6, 0.3)</volume>
+            <offset>(0.0, -0.1)</offset>
+          </shadowData>
 				</graphicData>
+        
 				<statBases>
 					<MaxHitPoints>700</MaxHitPoints>
 					<Flammability>0</Flammability>

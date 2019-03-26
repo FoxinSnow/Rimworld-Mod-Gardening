@@ -1,0 +1,4 @@
+D:\Github\Rimworld-Mod-Gardening\Gardening\Source\Gardening\Gardening\obj\Debug\Gardening.csprojAssemblyReference.cache
+D:\Github\Rimworld-Mod-Gardening\Gardening\Source\Gardening\Gardening\obj\Debug\Gardening.csproj.CoreCompileInputs.cache
+D:\Github\Rimworld-Mod-Gardening\Gardening\Assemblies\Gardening.dll
+D:\Github\Rimworld-Mod-Gardening\Gardening\Source\Gardening\Gardening\obj\Debug\Gardening.dll
