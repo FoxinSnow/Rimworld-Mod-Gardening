@@ -1,22 +1,27 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-  
-		<ThingDef ParentName="FurnitureBase">
-			<defName>GardenLamp</defName>
-			<label>garden lamp</label>
-			<description>A lovely outdoor light source.</description>
+  <ThingDef ParentName="FurnitureBase">
+    <defName>GardenLamp</defName>
+    <label>garden lamp</label>
+    <description>A traditional outdoor source with warm light. Let you feel at in a city.</description>
+    <designationCategory>Gardening</designationCategory>
+    
+    <altitudeLayer>Waist</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <selectable>true</selectable>
+    <fillPercent>0.90</fillPercent>
       
-			<graphicData>
-				<texPath>Garden_Lamp_tex</texPath>
-				<graphicClass>Graphic_Single</graphicClass>
-				<drawSize>(1,2)</drawSize>
+    <graphicData>
+        <texPath>Garden_Lamp_tex</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+        <drawSize>(2,2)</drawSize>
         <shadowData>
           <volume>(0.3, 0.6, 0.3)</volume>
-          <offset>(0.0, -0.1)</offset>
+          <offset>(0.0, 0.0, -0.1)</offset>
         </shadowData>
-			</graphicData>
+    </graphicData>
       
-      <comps>
+    <comps>
         <li Class="CompProperties_Power">
           <compClass>CompPowerTrader</compClass>
           <basePowerConsumption>100</basePowerConsumption>
@@ -25,30 +30,34 @@
         <li Class="CompProperties_Flickable">
           <compClass>CompQuality</compClass>
         </li>
-      </comps>
+        <li Class="CompProperties_Glower">
+            <glowRadius>10</glowRadius>
+            <glowColor>(245,222,179,0)</glowColor>
+        </li>
+    </comps>
       
-			<statBases>
-				<MaxHitPoints>300</MaxHitPoints>
-				<Flammability>0</Flammability>
-				<Beauty>3</Beauty>
-				<WorkToBuild>500</WorkToBuild>
-				<Mass>10</Mass> <!--weight-->
-			</statBases>
-			<socialPropernessMatters>false</socialPropernessMatters>
-			<size>(1,2)</size>
-			<costList>
-				<Steel>2</Steel>
-			</costList>
-			<stuffCategories>
-				<li>Woody</li>
-				<li>Stony</li>
-			</stuffCategories>
-			<costStuffCount>50</costStuffCount>
-			<constructionSkillPrerequisite>1</constructionSkillPrerequisite>
       
-			<!--for c# use
-			<AddHediffChance>0.05</AddHediffChance>
-			<HediffToAdd>Gardening</HediffToAdd>
-			<thingClass>Gardening.Projectile_GardenLamp</thingClass>-->
-		</ThingDef>
+    <statBases>
+        <MaxHitPoints>300</MaxHitPoints>
+        <Flammability>0</Flammability>
+        <Beauty>3</Beauty>
+        <WorkToBuild>500</WorkToBuild>
+        <Mass>10</Mass> <!--weight-->
+    </statBases>
+    <socialPropernessMatters>false</socialPropernessMatters>
+    <size>(1, 1)</size>
+    <costList>
+        <Steel>5</Steel>
+    </costList>
+    <stuffCategories>
+        <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>10</costStuffCount>
+    <constructionSkillPrerequisite>1</constructionSkillPrerequisite>
+      
+    <!--for c# use
+    <AddHediffChance>0.05</AddHediffChance>
+    <HediffToAdd>Gardening</HediffToAdd>
+    <thingClass>Gardening.Projectile_GardenLamp</thingClass>-->
+  </ThingDef>
 </Defs>

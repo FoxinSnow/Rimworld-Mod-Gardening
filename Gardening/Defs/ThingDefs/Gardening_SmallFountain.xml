@@ -1,38 +1,39 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
-			<!--Def a small love fountain-->
-			<ThingDef ParentName="FurnitureBase">
-				<defName>Small_Fountain</defName>
-				<label>small fountain</label>
-				<description>A simple and small fountain to bring you happiness.</description>
+    <ThingDef ParentName="FurnitureBase">
+        <defName>Small_Fountain</defName>
+        <label>small fountain</label>
+        <description>A simple and small fountain to bring you happiness.</description>
+        <designationCategory>Gardening</designationCategory>
         
-				<graphicData>
-					<texPath>Small_Fountain_tex</texPath>
-					<graphicClass>Graphic_Single</graphicClass>
-					<drawSize>(3,3)</drawSize>
-          <shadowData>
-            <volume>(0.3, 0.6, 0.3)</volume>
-            <offset>(0.0, -0.1)</offset>
-          </shadowData>
-				</graphicData>
+        <selectable>true</selectable>
+        <fillPercent>0.90</fillPercent>
         
-				<statBases>
-					<MaxHitPoints>700</MaxHitPoints>
-					<Flammability>0</Flammability>
-					<Beauty>10</Beauty>
-					<WorkToBuild>1000</WorkToBuild>
-					<Mass>50</Mass> <!--weight-->
-				</statBases>
-				<socialPropernessMatters>true</socialPropernessMatters>
-				<size>(2,2)</size>
-				<stuffCategories>
-					<li>Woody</li>
-					<li>Stony</li>
-				</stuffCategories>
-				<costStuffCount>100</costStuffCount>
-				<constructionSkillPrerequisite>2</constructionSkillPrerequisite>
-				<techLevel>Medieval</techLevel>
-			</ThingDef>
-
+        <graphicData>
+            <texPath>Small_Fountain_tex</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(3,3)</drawSize>
+            <shadowData>
+                <volume>(0.3, 0.6, 0.3)</volume>
+                <offset>(0.0, 0.0, -0.1)</offset>
+            </shadowData>
+        </graphicData>
+        
+        <statBases>
+            <MaxHitPoints>700</MaxHitPoints>
+            <Flammability>0</Flammability>
+            <Beauty>15</Beauty>
+            <WorkToBuild>1000</WorkToBuild>
+            <Mass>50</Mass> <!--weight-->
+        </statBases>
+        <socialPropernessMatters>true</socialPropernessMatters>
+        <size>(2,2)</size>
+        <stuffCategories>
+            <li>Woody</li>
+            <li>Stony</li>
+        </stuffCategories>
+        <costStuffCount>100</costStuffCount>
+        <constructionSkillPrerequisite>2</constructionSkillPrerequisite>
+        <techLevel>Medieval</techLevel>
+    </ThingDef>
 </Defs>

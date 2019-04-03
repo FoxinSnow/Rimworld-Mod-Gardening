@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef ParentName="BuildingBase">
+        <defName>GreenHedgeWall</defName>
+        <label>green hedge wall</label>
+        <description>Lovely, vintage hedge. Use it to build your hedge maze.</description>
+        <designationCategory>Gardening</designationCategory>
+
+        <graphicData>
+            <texPath>hedgewall</texPath>
+            <graphicClass>Graphic_Appearances</graphicClass>
+            <linkType>Basic</linkType>
+            <linkFlags>
+                <li>Custom3</li>
+            </linkFlags>
+            <damageData>
+                <cornerTL>Damage/Corner</cornerTL>
+                <cornerTR>Damage/Corner</cornerTR>
+                <cornerBL>Damage/Corner</cornerBL>
+                <cornerBR>Damage/Corner</cornerBR>
+                <edgeTop>Damage/Edge</edgeTop>
+                <edgeBot>Damage/Edge</edgeBot>
+                <edgeLeft>Damage/Edge</edgeLeft>
+                <edgeRight>Damage/Edge</edgeRight>
+            </damageData>
+        </graphicData>
+        
+        <uiIconPath>Hedge_icon</uiIconPath>
+        <statBases>
+            <Beauty>15</Beauty>
+            <MaxHitPoints>300</MaxHitPoints>
+            <WorkToBuild>500</WorkToBuild>
+            <Flammability>0.8</Flammability>
+            <JoyGainFactor>2</JoyGainFactor>
+        </statBases>
+        
+        <building>
+            <joyKind>Gaming_Dexterity</joyKind>
+            <watchBuildingStandDistanceRange>
+                <min>2</min>
+                <max>2</max>
+            </watchBuildingStandDistanceRange>
+            <watchBuildingStandRectWidth>2</watchBuildingStandRectWidth>
+            <isInert>true</isInert>
+            <blueprintGraphicData>
+                <texPath>Hedge_Blueprint</texPath>
+            </blueprintGraphicData>
+        </building>
+        
+        <costList>
+            <WoodLog>5</WoodLog>
+        </costList>
+        <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+        <altitudeLayer>Building</altitudeLayer>
+        <passability>PassThroughOnly</passability>
+        <pathCost>35</pathCost>
+        <blockWind>false</blockWind>
+        <castEdgeShadows>true</castEdgeShadows>
+        <fillPercent>0.5</fillPercent>
+        <constructEffect>ConstructWood</constructEffect>
+        <placingDraggableDimensions>1</placingDraggableDimensions>
+        <tickerType>Never</tickerType>
+        <rotatable>false</rotatable>
+        <selectable>true</selectable>
+        <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+        <staticSunShadowHeight>1.0</staticSunShadowHeight>
+        <blockLight>false</blockLight>
+        <canOverlapZones>false</canOverlapZones>
+        <designationHotKey>Misc3</designationHotKey>
+    </ThingDef>
+</Defs>
+
+

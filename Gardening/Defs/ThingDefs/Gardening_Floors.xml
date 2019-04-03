@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    
+<!--  Gravel Floor  -->
+    <!--FloorBase is defined in core-->
+     <TerrainDef Abstract="True" ParentName="FloorBase" Name="GravelFloorBase">
+        <renderPrecedence>220</renderPrecedence>
+        <description>A gravel floor is super nice for using in outdoor environment. Get you a beautiful garden look.</description>
+        <designationCategory>Gardening</designationCategory>
+        <texturePath>Gravel_Floor_tex</texturePath>
+        <statBases>
+            <WorkToBuild>200</WorkToBuild>
+            <Beauty>3</Beauty>
+        </statBases>
+<!--        <designatorDropdown>Floor_Tile</designatorDropdown>-->
+        <researchPrerequisites>
+            <li>Stonecutting</li>
+        </researchPrerequisites>
+        <constructionSkillPrerequisite>3</constructionSkillPrerequisite>
+    </TerrainDef>
+    
+    <TerrainDef ParentName="GravelFloorBase">
+        <defName>GravelFloorSandstone</defName>
+        <label>sandstone gravel floor</label>
+        <color>(126,104,94)</color>
+        <costList>
+            <BlocksSandstone>2</BlocksSandstone>
+        </costList>
+    </TerrainDef>
+    
+    <TerrainDef ParentName="GravelFloorBase">
+        <defName>GravelFloorGranite</defName>
+        <label>granite gravel floor</label>
+        <color>(105,95,97)</color>
+        <costList>
+            <BlocksGranite>2</BlocksGranite>
+        </costList>
+    </TerrainDef>
+    
+    <TerrainDef ParentName="GravelFloorBase">
+        <defName>GravelFloorLimestone</defName>
+        <label>limestone gravel floor</label>
+        <color>(158,153,135)</color>
+        <costList>
+            <BlocksLimestone>2</BlocksLimestone>
+        </costList>
+    </TerrainDef>
+    
+    <TerrainDef ParentName="GravelFloorBase">
+        <defName>GravelFloorSlate</defName>
+        <label>slate gravel floor</label>
+        <color>(100,100,100)</color>
+        <costList>
+            <BlocksSlate>2</BlocksSlate>
+        </costList>
+    </TerrainDef>
+    
+    <TerrainDef ParentName="GravelFloorBase">
+        <defName>GravelFloorMarble</defName>
+        <label>marble gravel floor</label>
+        <color>(132,135,132)</color>
+        <costList>
+            <BlocksMarble>2</BlocksMarble>
+        </costList>
+    </TerrainDef>
+    
+<!--  Just Gray Floor  -->
+
+    <TerrainDef Abstract="True" ParentName="FloorBase" Name="GrayFloorBase">
+        <renderPrecedence>220</renderPrecedence>
+        <defName>GrayFloor</defName>
+        <label>gray floor</label>
+        <description>Gray, it is just gray.</description>
+        <designationCategory>Gardening</designationCategory>
+        <texturePath>Gray_Floor_tex</texturePath>
+        <statBases>
+            <WorkToBuild>150</WorkToBuild>
+            <Beauty>2</Beauty>
+        </statBases>
+<!--        <designatorDropdown>Floor_FlagStone</designatorDropdown>-->
+        <researchPrerequisites>
+            <li>Stonecutting</li>
+        </researchPrerequisites>
+        <constructionSkillPrerequisite>2</constructionSkillPrerequisite>
+    </TerrainDef>
+     
+    <TerrainDef ParentName="GrayFloorBase">
+         <defName>GrayFloorSandstone</defName>
+         <label>sandstone gray floor</label>
+         <color>(126,104,94)</color>
+         <costList>
+             <BlocksSandstone>2</BlocksSandstone>
+         </costList>
+    </TerrainDef>
+     
+    <TerrainDef ParentName="GrayFloorBase">
+         <defName>GrayFloorGranite</defName>
+         <label>granite gray floor</label>
+         <color>(105,95,97)</color>
+         <costList>
+             <BlocksGranite>2</BlocksGranite>
+         </costList>
+    </TerrainDef>
+     
+    <TerrainDef ParentName="GrayFloorBase">
+         <defName>GrayFloorLimestone</defName>
+         <label>limestone gray floor</label>
+         <color>(158,153,135)</color>
+         <costList>
+             <BlocksLimestone>2</BlocksLimestone>
+         </costList>
+    </TerrainDef>
+     
+    <TerrainDef ParentName="GrayFloorBase">
+         <defName>GrayFloorSlate</defName>
+         <label>slate gray floor</label>
+         <color>(100,100,100)</color>
+         <costList>
+             <BlocksSlate>2</BlocksSlate>
+         </costList>
+    </TerrainDef>
+     
+    <TerrainDef ParentName="GrayFloorBase">
+         <defName>GrayFloorMarble</defName>
+         <label>marble gray floor</label>
+         <color>(132,135,132)</color>
+         <costList>
+             <BlocksMarble>2</BlocksMarble>
+         </costList>
+    </TerrainDef>
+    
+</Defs>
