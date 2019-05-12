@@ -5,9 +5,7 @@
 
 A simple mod to help you build a basic garden in the Rimworld.
 
-There are `fountains`, `floors`, `lamp` and `hedge`.
+There are `fountains`, `floors`, `lamp` and `hedge`.<br>
 
-
-<div align="center">
-  <img width="500" height="350" src="https://github.com/FoxinSnow/Rimworld-Mod-Gardening/blob/master/Gardening/About/Preview.png"/>
+<img width="500" height="350" src="https://github.com/FoxinSnow/Rimworld-Mod-Gardening/blob/master/Gardening/About/Preview.png"/>
 
