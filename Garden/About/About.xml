@@ -4,6 +4,8 @@
 	<name>Gardening - 1.0</name>
 	<author>FoxinSnow</author>
     <supportedVersions>
+        <li>1.0</li>
+        <li>1.1</li>
         <li>1.2</li>
     </supportedVersions>
     <description>
